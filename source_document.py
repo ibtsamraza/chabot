@@ -23,7 +23,7 @@ prompt = PromptTemplate(
 )
 
 llm=HuggingFaceEndpoint(repo_id="meta-llama/Llama-3.2-11B-Vision-Instruct", task="text-generation",
-                        temperature=0.1, huggingfacehub_api_token="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")
+                        temperature=0.1, huggingfacehub_api_token="hf_")
 url = "https://huggingface.co/datasets/huggingface/documentation-images/resolve/0052a70beed5bf71b92610a43a52df6d286cd5f3/diffusers/rabbit.jpg"
 image = Image.open(requests.get(url, stream=True).raw)
 
